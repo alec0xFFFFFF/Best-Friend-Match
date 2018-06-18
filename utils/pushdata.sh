@@ -15,6 +15,7 @@ CIVI_APIKEY=4af4991708cbb50f4283a106315d7ec6
 FIRST_NAME="John"
 LAST_NAME="Doe"
 EMAIL="jdoe@example.com"
+UUID="XXXX-XXX-XXXX"
 
 curl --insecure --request POST $CIVIURL \
   --data-urlencode "api_key=$CIVI_APIKEY" \
@@ -26,4 +27,6 @@ curl --insecure --request POST $CIVIURL \
   --data-urlencode "json={\"contact_type\": \"Individual\",
     \"first_name\": \"$FIRST_NAME\",
     \"last_name\": \"$LAST_NAME\",
+    \"external_identifier\": \"$UUID\",
     \"api.Email.create\": {\"location_type_id\": \"Main\", \"email\": \"$EMAIL\"}}"
+
