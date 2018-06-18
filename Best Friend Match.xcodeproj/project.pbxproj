@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D38ABF0CEC0A0FF9CD15A86 /* Pods_Best_Friend_Match.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA95CB641636871F19C96D70 /* Pods_Best_Friend_Match.framework */; };
 		E377B21220D7F3A1008DD273 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E377B21120D7F3A1008DD273 /* AppDelegate.swift */; };
 		E377B21420D7F3A1008DD273 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E377B21320D7F3A1008DD273 /* ViewController.swift */; };
 		E377B21720D7F3A1008DD273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E377B21520D7F3A1008DD273 /* Main.storyboard */; };
 		E377B21A20D7F3A1008DD273 /* Best_Friend_Match.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E377B21820D7F3A1008DD273 /* Best_Friend_Match.xcdatamodeld */; };
 		E377B21C20D7F3A2008DD273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E377B21B20D7F3A2008DD273 /* Assets.xcassets */; };
 		E377B21F20D7F3A3008DD273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E377B21D20D7F3A2008DD273 /* LaunchScreen.storyboard */; };
+		E377B22720D7FA97008DD273 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E377B22620D7FA97008DD273 /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79FC2DCC62D6858A8D2BC80A /* Pods-Best Friend Match.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Best Friend Match.release.xcconfig"; path = "Pods/Target Support Files/Pods-Best Friend Match/Pods-Best Friend Match.release.xcconfig"; sourceTree = "<group>"; };
+		CA95CB641636871F19C96D70 /* Pods_Best_Friend_Match.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Best_Friend_Match.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2DE18ADDF2359D1F0C7EAF8 /* Pods-Best Friend Match.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Best Friend Match.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Best Friend Match/Pods-Best Friend Match.debug.xcconfig"; sourceTree = "<group>"; };
 		E377B20E20D7F3A1008DD273 /* Best Friend Match.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Best Friend Match.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E377B21120D7F3A1008DD273 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E377B21320D7F3A1008DD273 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		E377B21B20D7F3A2008DD273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E377B21E20D7F3A2008DD273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E377B22020D7F3A3008DD273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E377B22620D7FA97008DD273 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D38ABF0CEC0A0FF9CD15A86 /* Pods_Best_Friend_Match.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		741D60F7C8636B110E9522CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2DE18ADDF2359D1F0C7EAF8 /* Pods-Best Friend Match.debug.xcconfig */,
+				79FC2DCC62D6858A8D2BC80A /* Pods-Best Friend Match.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DECE66FC695EE5B7E5992A42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA95CB641636871F19C96D70 /* Pods_Best_Friend_Match.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E377B20520D7F3A0008DD273 = {
 			isa = PBXGroup;
 			children = (
 				E377B21020D7F3A1008DD273 /* Best Friend Match */,
 				E377B20F20D7F3A1008DD273 /* Products */,
+				741D60F7C8636B110E9522CE /* Pods */,
+				DECE66FC695EE5B7E5992A42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +88,7 @@
 				E377B21B20D7F3A2008DD273 /* Assets.xcassets */,
 				E377B21D20D7F3A2008DD273 /* LaunchScreen.storyboard */,
 				E377B22020D7F3A3008DD273 /* Info.plist */,
+				E377B22620D7FA97008DD273 /* awsconfiguration.json */,
 				E377B21820D7F3A1008DD273 /* Best_Friend_Match.xcdatamodeld */,
 			);
 			path = "Best Friend Match";
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E377B22320D7F3A3008DD273 /* Build configuration list for PBXNativeTarget "Best Friend Match" */;
 			buildPhases = (
+				4EF13679E624232692E2C839 /* [CP] Check Pods Manifest.lock */,
 				E377B20A20D7F3A0008DD273 /* Sources */,
 				E377B20B20D7F3A0008DD273 /* Frameworks */,
 				E377B20C20D7F3A0008DD273 /* Resources */,
+				601920C72AE4AEE80922FDDC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E377B22720D7FA97008DD273 /* awsconfiguration.json in Resources */,
 				E377B21F20D7F3A3008DD273 /* LaunchScreen.storyboard in Resources */,
 				E377B21C20D7F3A2008DD273 /* Assets.xcassets in Resources */,
 				E377B21720D7F3A1008DD273 /* Main.storyboard in Resources */,
@@ -132,6 +162,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EF13679E624232692E2C839 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Best Friend Match-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		601920C72AE4AEE80922FDDC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Best Friend Match/Pods-Best Friend Match-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Best Friend Match/Pods-Best Friend Match-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E377B20A20D7F3A0008DD273 /* Sources */ = {
@@ -282,11 +355,13 @@
 		};
 		E377B22420D7F3A3008DD273 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2DE18ADDF2359D1F0C7EAF8 /* Pods-Best Friend Match.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QP49UXD4V9;
 				INFOPLIST_FILE = "Best Friend Match/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +375,13 @@
 		};
 		E377B22520D7F3A3008DD273 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79FC2DCC62D6858A8D2BC80A /* Pods-Best Friend Match.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QP49UXD4V9;
 				INFOPLIST_FILE = "Best Friend Match/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
