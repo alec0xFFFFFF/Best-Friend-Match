@@ -69,6 +69,9 @@
                                 <rect key="frame" x="163" y="618" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="uploadImageButtonTapped:" destination="oPc-sU-cbg" eventType="touchUpInside" id="y5y-lS-hen"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xh7-p0-pme">
                                 <rect key="frame" x="82" y="568" width="210" height="30"/>
