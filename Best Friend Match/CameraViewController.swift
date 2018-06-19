@@ -18,7 +18,13 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     @IBOutlet var imageView: UIImageView!
     
+    @IBOutlet var uploadStatusLabel: UILabel!
+    
     let imagePicker = UIImagePickerController()
+    
+    var imagecount = 0
+    
+    @IBOutlet var imageCountDisplay: UILabel!
     
     @IBAction func loadImageButtonTapped(_ sender: UIButton) {
         imagePicker.allowsEditing = false
@@ -29,7 +35,15 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     @IBAction func uploadImageButtonTapped(_ sender: UIButton) {
         let imageData = UIImageJPEGRepresentation(imageView.image!, 0.6) as Data?
-        mediaHelper.uploadMedia(mediaData: imageData!, mediaID: "mobileTest")
+        let uuid = UUID().uuidString
+        print("uuid:")
+        print(uuid)
+        mediaHelper.uploadMedia(mediaData: imageData!, mediaID: uuid)
+        // todo send 
+        imagecount += 1
+        imageCountDisplay.text = String(imagecount)
+        imageView.image = nil
+        uploadStatusLabel.text = "Upload Complete"  // todo make sure it was actually updated
     }
     
     override func viewDidLoad() {
@@ -42,6 +56,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     func imagePickerController(_ picked: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]){
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             imageView.contentMode = .scaleAspectFit
+            uploadStatusLabel.text = nil
             imageView.image = pickedImage
         }
         dismiss(animated: true, completion: nil)
@@ -78,7 +93,7 @@ class MediaHelper {
         
         let uploadRequest = AWSS3TransferManagerUploadRequest()!
         
-        uploadRequest.bucket = "bestfriendpets"
+        uploadRequest.bucket = "bestfriendpets/bestfriend"
         uploadRequest.key = mediaID + ".jpg"
         uploadRequest.body = uploadingFileURL
         uploadRequest.contentType = "image/jpeg"
@@ -105,3 +120,4 @@ class MediaHelper {
     }
     
 }
+

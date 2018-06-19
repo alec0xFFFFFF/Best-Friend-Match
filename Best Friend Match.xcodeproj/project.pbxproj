@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8D38ABF0CEC0A0FF9CD15A86 /* Pods_Best_Friend_Match.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA95CB641636871F19C96D70 /* Pods_Best_Friend_Match.framework */; };
 		E377B21220D7F3A1008DD273 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E377B21120D7F3A1008DD273 /* AppDelegate.swift */; };
-		E377B21420D7F3A1008DD273 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E377B21320D7F3A1008DD273 /* InitialViewController.swift */; };
+		E377B21420D7F3A1008DD273 /* ApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E377B21320D7F3A1008DD273 /* ApplicationViewController.swift */; };
 		E377B21720D7F3A1008DD273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E377B21520D7F3A1008DD273 /* Main.storyboard */; };
 		E377B21A20D7F3A1008DD273 /* Best_Friend_Match.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E377B21820D7F3A1008DD273 /* Best_Friend_Match.xcdatamodeld */; };
 		E377B21C20D7F3A2008DD273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E377B21B20D7F3A2008DD273 /* Assets.xcassets */; };
@@ -24,7 +24,7 @@
 		D2DE18ADDF2359D1F0C7EAF8 /* Pods-Best Friend Match.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Best Friend Match.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Best Friend Match/Pods-Best Friend Match.debug.xcconfig"; sourceTree = "<group>"; };
 		E377B20E20D7F3A1008DD273 /* Best Friend Match.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Best Friend Match.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E377B21120D7F3A1008DD273 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E377B21320D7F3A1008DD273 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		E377B21320D7F3A1008DD273 /* ApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationViewController.swift; sourceTree = "<group>"; };
 		E377B21620D7F3A1008DD273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E377B21920D7F3A1008DD273 /* Best_Friend_Match.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Best_Friend_Match.xcdatamodel; sourceTree = "<group>"; };
 		E377B21B20D7F3A2008DD273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				E377B21120D7F3A1008DD273 /* AppDelegate.swift */,
-				E377B21320D7F3A1008DD273 /* InitialViewController.swift */,
+				E377B21320D7F3A1008DD273 /* ApplicationViewController.swift */,
 				E377B22A20D803C5008DD273 /* CameraViewController.swift */,
 				E377B21520D7F3A1008DD273 /* Main.storyboard */,
 				E377B21B20D7F3A2008DD273 /* Assets.xcassets */,
@@ -197,6 +197,7 @@
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -205,6 +206,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -218,7 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E377B21420D7F3A1008DD273 /* InitialViewController.swift in Sources */,
+				E377B21420D7F3A1008DD273 /* ApplicationViewController.swift in Sources */,
 				E377B22B20D803C5008DD273 /* CameraViewController.swift in Sources */,
 				E377B21220D7F3A1008DD273 /* AppDelegate.swift in Sources */,
 				E377B21A20D7F3A1008DD273 /* Best_Friend_Match.xcdatamodeld in Sources */,
